@@ -8,7 +8,7 @@ The VEF dataset comprises a collection of video clips, each accompanied by descr
 
 ## Dataset Structure
 
-The dataset is organized into the `data/`,please see `data/readme.md'.
+The dataset is organized into the `data/`,please see `data/readme.md`.
 
 
 ## Usage
