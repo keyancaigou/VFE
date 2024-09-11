@@ -8,10 +8,8 @@ The VEF dataset comprises a collection of video clips, each accompanied by descr
 
 ## Dataset Structure
 
-The dataset is organized into the following directories:
+The dataset is organized into the `data/`,please see `data/reade.md'.
 
-- `videos/`: Contains the video clips used in the dataset.
-- `annotations/`: Contains the annotation files with descriptions for each video.
 
 ## Usage
 
