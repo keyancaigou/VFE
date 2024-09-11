@@ -20,7 +20,10 @@ To use the VEF dataset, follow these steps:
 3. Use the provided annotations to train and evaluate your models.
 
 ## Related Work
-Video-LLaMA [(https://github.com/DAMO-NLP-SG/Video-LLaMA)]
+* [Video-LLaMA](https://github.com/DAMO-NLP-SG/Video-LLaMA)
+* [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
+* [VideoChat](https://github.com/OpenGVLab/Ask-Anything)
+* [MovieChat](https://github.com/rese1f/MovieChat)
 
 ## Citation
 
