@@ -7,7 +7,7 @@ First, create a conda environment:
 
 ```bash
 conda env create -f environment.yml
-conda activate moviechat
+conda activate chat
 ```
 
 ### Prerequisites
@@ -32,18 +32,18 @@ Before using the repository, ensure you have obtained the following checkpoints:
          --delta ckpt/Vicuna/vicuna-7b-delta-v0
      ```
 
-#### Pre-trained Visual Encoder for MovieChat
+#### Pre-trained Visual Encoder for baseline
 
 - Download the MiniGPT-4 model (trained linear layer) from [this link](https://github.com/Vision-CAIR/MiniGPT-4).
 
 #### Download Pretrained Weights
 
-- Download pretrained weights to run MovieChat with Vicuna-7B as the language decoder locally from [this link](#).
+- Download pretrained weights to run baseline with Vicuna-7B as the language decoder locally from [this link](#).
 
 ## How to Run Demo Locally
 
 1. **Configuration:**
-   - Set the `llama_model`, `llama_proj_model`, and `ckpt` in `eval_configs/MovieChat.yaml`.
+   - Set the `llama_model`, `llama_proj_model`, and `ckpt` in `eval_configs/baseline.yaml`.
 
 2. **Run the Inference Script:**
 
@@ -65,7 +65,7 @@ Before using the repository, ensure you have obtained the following checkpoints:
 
 ## Acknowledgement
 
-We are grateful for the following awesome projects that our MovieChat arises from:
+We are grateful for the following awesome projects that our baseline arises from:
 
 - [Video-LLaMA: An Instruction-tuned Audio-Visual Language Model for Video Understanding](https://github.com/example/Video-LLaMA)
 - [Token Merging: Your ViT but Faster](https://github.com/example/Token-Merging)
@@ -80,7 +80,7 @@ We are grateful for the following awesome projects that our MovieChat arises fro
 
 ## 🔒 Terms of Use
 
-Our MovieChat is a research preview intended for **non-commercial use only**. You **must NOT** use MovieChat for any illegal, harmful, violent, racist, or sexual purposes. You are strictly prohibited from engaging in any activity that may potentially violate these guidelines.
+Our baseline is a research preview intended for **non-commercial use only**. You **must NOT** use baseline for any illegal, harmful, violent, racist, or sexual purposes. You are strictly prohibited from engaging in any activity that may potentially violate these guidelines.
 
 ---
 
