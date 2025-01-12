@@ -78,10 +78,4 @@ We are grateful for the following awesome projects that our baseline arises from
 - [VideoChat: Chat-Centric Video Understanding](https://github.com/example/VideoChat)
 - [LLaVA: Large Language and Vision Assistant](https://github.com/example/LLaVA)
 
-## 🔒 Terms of Use
-
-Our baseline is a research preview intended for **non-commercial use only**. You **must NOT** use baseline for any illegal, harmful, violent, racist, or sexual purposes. You are strictly prohibited from engaging in any activity that may potentially violate these guidelines.
-
----
-
 ```
