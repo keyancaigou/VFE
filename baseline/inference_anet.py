@@ -12,13 +12,13 @@ import torch
 import torch.backends.cudnn as cudnn
 import gradio as gr
 
-from video_llama.common.registry import registry
+from BaseLine.common.registry import registry
 from decord import VideoReader
 
-from video_llama.processors import transforms_video
-from video_llama.processors.base_processor import BaseProcessor
-from video_llama.processors.randaugment import VideoRandomAugment
-from video_llama.processors import functional_video as F
+from BaseLine.processors import transforms_video
+from BaseLine.processors.base_processor import BaseProcessor
+from BaseLine.processors.randaugment import VideoRandomAugment
+from BaseLine.processors import functional_video as F
 from omegaconf import OmegaConf
 from torchvision import transforms
 import random as rnd
@@ -29,30 +29,30 @@ from transformers import StoppingCriteria, StoppingCriteriaList
 import dataclasses
 from enum import auto, Enum
 from typing import List, Tuple, Any
-from video_llama.common.registry import registry
-from video_llama.processors.video_processor import ToTHWC,ToUint8,load_video
-from video_llama.processors import Blip2ImageEvalProcessor
+from BaseLine.common.registry import registry
+from BaseLine.processors.video_processor import ToTHWC,ToUint8,load_video
+from BaseLine.processors import Blip2ImageEvalProcessor
             
-from video_llama.models.ImageBind.data import load_and_transform_audio_data
-from video_llama.common.config import Config
-from video_llama.common.dist_utils import get_rank
-from video_llama.common.registry import registry
-from video_llama.conversation.conversation_video import Conversation, default_conversation,SeparatorStyle
+from BaseLine.models.ImageBind.data import load_and_transform_audio_data
+from BaseLine.common.config import Config
+from BaseLine.common.dist_utils import get_rank
+from BaseLine.common.registry import registry
+from BaseLine.conversation.conversation_video import Conversation, default_conversation,SeparatorStyle
 import decord
 decord.bridge.set_bridge('torch')
 
 #%%
 # imports modules for registration
-from video_llama.datasets.builders import *
-from video_llama.models import *
-from video_llama.processors import *
-from video_llama.runners import *
-from video_llama.tasks import *
+from BaseLine.datasets.builders import *
+from BaseLine.models import *
+from BaseLine.processors import *
+from BaseLine.runners import *
+from BaseLine.tasks import *
 
 #%%
 def parse_args():
     parser = argparse.ArgumentParser(description="Demo")
-    parser.add_argument("--cfg-path", default='eval_configs/video_llama_eval.yaml', help="path to configuration file.")
+    parser.add_argument("--cfg-path", default='eval_configs/BaseLine_eval.yaml', help="path to configuration file.")
     parser.add_argument("--gpu-id", type=int, default=0, help="specify the gpu to load the model.")
     parser.add_argument(
         "--options",
