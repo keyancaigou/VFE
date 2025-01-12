@@ -343,8 +343,8 @@ chat = Chat(model, vis_processor, device='cuda:{}'.format(args.gpu_id))
 print('Initialization Finished')
 
 
-data_path = "/data1/lch/datasets/anet/anet_instruct_6k_val1.json"
-video_path = '/data1/lch/datasets/anet/video'
+data_path = "./data/VFE_val.json"
+video_path = '/data/video_clips'
 
 pre_data = []
 raw_lines = load_json(data_path)
@@ -389,4 +389,4 @@ for line in tqdm(raw_lines):
     data['timestamps']=timestamps
     pre_data.append(data)
     # print(pre_data)
-save_json(pre_data,'./IJCV/IJCV_Result/anet_pre_videollama_7b.json')
+save_json(pre_data,'output.json')
